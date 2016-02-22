@@ -61,7 +61,6 @@ server.listen(3005, function() {
                 } else {
                   console.log(rows);
                 }
-                conn.close();   
             });
 
             conn.query(query2, function (err, rows) {
@@ -70,7 +69,6 @@ server.listen(3005, function() {
                 } else {
                   console.log(rows);
                 }
-                conn.close();   
             });
 
             conn.query(query3, function (err, rows) {
@@ -79,7 +77,6 @@ server.listen(3005, function() {
                 } else {
                   console.log(rows);
                 }
-                conn.close();   
             });
         }
     });
