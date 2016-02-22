@@ -59,7 +59,7 @@ server.listen(3005, function() {
                 if (err) {
                     console.log("Failed to execute query 1: ", err);
                 } else {
-                  console.log(rows);
+                    console.log(rows);
                 }
             });
 
@@ -67,7 +67,7 @@ server.listen(3005, function() {
                 if (err) {
                     console.log("Failed to execute query 2: ", err);
                 } else {
-                  console.log(rows);
+                    console.log(rows);
                 }
             });
 
@@ -75,7 +75,7 @@ server.listen(3005, function() {
                 if (err) {
                     console.log("Failed to execute query 3: ", err);
                 } else {
-                  console.log(rows);
+                    console.log(rows);
                 }
             });
         }
