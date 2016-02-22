@@ -56,7 +56,7 @@ server.listen(3005, function() {
             console.log("Error opening db connection: ", err);
         } else {
             conn.query(query1, function (err, rows) {
-            if (err) {
+                if (err) {
                     console.log("Failed to execute query 1: ", err);
                 } else {
                   console.log(rows);
