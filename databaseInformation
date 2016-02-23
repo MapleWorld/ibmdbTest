@@ -1,9 +1,21 @@
 CREATE DATABASE TEST
 CREATE SCHEMA TEST
 CREATE TABLE TEST(id INT NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1 INCREMENT BY 1),name VARCHAR(10) NOT NULL,PRIMARY KEY (id))
+CREATE TABLE TEST.TEST(id INT NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1 INCREMENT BY 1),name VARCHAR(10) NOT NULL,PRIMARY KEY (id))
 
 INSERT INTO TEST (name) values('test')
+INSERT INTO TEST.TEST (name) values('test')
+INSERT INTO TEST.TEST (name) values('test')
+INSERT INTO TEST.TEST (name) values('test')
+INSERT INTO TEST.TEST (name) values('test')
 
+         21 'T'
+         24 St.Mary's
+         26 !@#
+         27 $%^
+         28 &*(
+         29 )_+
+         30 ;\,./
 db2 => connect to test
 
 Database server        = DB2/LINUXPPC64 10.5.6
